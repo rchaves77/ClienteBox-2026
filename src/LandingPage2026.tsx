@@ -234,7 +234,7 @@ export default function LandingPage2026({
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
-          'Nome Oficial da Empresa': bf.c1,
+          'Nome Oficial da Empresa/Serviço': bf.c1,
           'Nome do Responsável e Cargo': bf.c2,
           'Telefone / WhatsApp': bf.c3,
           'Ramo / Categoria Principal': bf.c4,
@@ -243,7 +243,7 @@ export default function LandingPage2026({
           'Horário de Funcionamento': bf.c7 || 'Não informado',
           'Site / Instagram': bf.c8 || 'Não informado',
           'Principais Serviços / Produtos': bf.c9,
-          'Diferenciais da Empresa': bf.c10 || 'Não informado',
+          'Diferenciais da Empresa/Serviço': bf.c10 || 'Não informado',
         }),
       }).catch(() => {});
     } catch {
@@ -262,7 +262,7 @@ export default function LandingPage2026({
       `*7. Horário de Funcionamento:* ${bf.c7 || 'Não informado'}`,
       `*8. Site / Instagram / Cardápio:* ${bf.c8 || 'Não informado'}`,
       `*9. Serviços que Mais Deseja Vender:* ${bf.c9}`,
-      `*10. Diferenciais da Empresa:* ${bf.c10 || 'Não informado'}`,
+      `*10. Diferenciais da Empresa/Serviço:* ${bf.c10 || 'Não informado'}`,
       '-----------------------------------------',
       'Solicito início do alinhamento de SEO Local e blindagem no Google Maps.',
     ].join('\n');
@@ -493,7 +493,7 @@ export default function LandingPage2026({
           pStage3 > 0.3 ? '#34d399' : pStage2 > 0.2 ? '#67e8f9' : 'rgba(161, 161, 170, 0.8)';
         ctx.fillText(
           pStage3 > 0.3
-            ? '★ SUA EMPRESA — TOP #1 GOOGLE MAPS'
+            ? '★ SUA EMPRESA/SERVIÇO — TOP #1 GOOGLE MAPS'
             : pStage2 > 0.2
             ? '⚡ CALIBRANDO EXIF GPS & UTMs...'
             : 'SUA EMPRESA (PINO INVISÍVEL)',
@@ -776,10 +776,10 @@ export default function LandingPage2026({
                 : 'bg-gradient-to-b from-white to-zinc-400 bg-clip-text text-transparent'
             }`}
           >
-            Enquanto o seu pino está invisível, o seu concorrente recebe a rota.
+            Enquanto o seu negócio está invisível no Google, o seu concorrente recebe a rota.
           </h1>
           <p className={`text-base sm:text-xl ${mutedText} max-w-3xl mx-auto font-normal leading-relaxed mb-10`}>
-            Auditamos, reestruturamos e otimizamos o perfil de negócios da sua empresa no Google para converter
+            Auditamos, reestruturamos e otimizamos o perfil de negócios da sua empresa ou serviço no Google para converter
             buscas imediatas de clientes locais em{' '}
             <strong className={lightMode ? 'text-zinc-900 font-semibold' : 'text-white font-semibold'}>
               rotas GPS no Waze/Maps
@@ -939,7 +939,7 @@ export default function LandingPage2026({
                 </h2>
                 <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed max-w-2xl">
                   As partículas vermelhas acima representam buscas reais no seu bairro sendo desviadas para
-                  concorrentes enquanto o seu pino permanece sem autoridade algorítmica.
+                  concorrentes enquanto o seu negócio permanece sem autoridade algorítmica.
                 </p>
               </div>
             </div>
@@ -1007,7 +1007,7 @@ export default function LandingPage2026({
                   Protocolo ClienteBox Ativado: Todas as rotas convergem para você.
                 </h2>
                 <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed max-w-xl">
-                  O pino da sua empresa se eleva ao <strong className="text-emerald-400">Top #1 do Google Maps</strong>,
+                  Sua empresa/serviço se eleva ao <strong className="text-emerald-400">Top #1 do Google Maps</strong>,
                   convertendo as buscas do bairro em rotas Waze/Maps e chamadas no WhatsApp.
                 </p>
               </div>
@@ -1047,7 +1047,7 @@ export default function LandingPage2026({
               <span>Ferramenta de Auto-Diagnóstico Gratuito</span>
             </div>
             <h2 className="font-extrabold text-3xl sm:text-5xl tracking-tight mb-4">
-              Descubra Quantos Clientes Sua Empresa Está Perdendo no Google Maps
+              Descubra Quantos Clientes Sua Empresa/Serviço Está Perdendo no Google Maps
             </h2>
             <p className={`${mutedText} text-base sm:text-lg`}>
               Insira os dados do seu negócio e deslize os controles abaixo para calcular em tempo real o
@@ -1063,7 +1063,7 @@ export default function LandingPage2026({
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
                     <label className={`block text-xs font-mono uppercase tracking-wider ${mutedText} mb-2`}>
-                      Nome da Sua Empresa / Marca *
+                      Nome da Sua Empresa / Serviço / Marca *
                     </label>
                     <input
                       type="text"
@@ -1451,7 +1451,7 @@ export default function LandingPage2026({
                 </div>
 
                 <h2 className="font-bold text-2xl sm:text-3xl leading-snug">
-                  &ldquo;Eu não terceirizo a inteligência estratégica da sua empresa para robôs ou
+                  &ldquo;Eu não terceirizo a inteligência estratégica da sua empresa/serviço para robôs ou
                   estagiários.&rdquo;
                 </h2>
 
@@ -1567,7 +1567,7 @@ export default function LandingPage2026({
                 </span>
                 <h3 className="font-extrabold text-3xl sm:text-4xl">Aceleração Total do Perfil</h3>
                 <p className={`${mutedText} text-sm sm:text-base`}>
-                  Tudo o que a sua empresa precisa para assumir o Top #1 do mapa local, sem fidelidade ou
+                  Tudo o que a sua empresa ou serviço precisa para assumir o Top #1 do mapa local, sem fidelidade ou
                   mensalidade obrigatória.
                 </p>
 
@@ -1685,7 +1685,7 @@ export default function LandingPage2026({
                 <ChevronDown className="w-5 h-5 text-emerald-400 shrink-0 transition-transform group-open:rotate-180" />
               </summary>
               <p className={`text-sm ${mutedText} mt-3 leading-relaxed`}>
-                Muitas empresas destravam as primeiras solicitações de rotas e contatos via WhatsApp nas primeiras
+                Muitas empresas e serviços destravam as primeiras solicitações de rotas e contatos via WhatsApp nas primeiras
                 48 a 72 horas após as correções técnicas de categoria, imagens georreferenciadas EXIF e links de
                 comunicação direta.
               </p>
@@ -1699,7 +1699,7 @@ export default function LandingPage2026({
               <p className={`text-sm ${mutedText} mt-3 leading-relaxed`}>
                 Não. O protocolo de Aceleração Total (R$ 700) é uma taxa única de engenharia e reestruturação
                 completa. Toda a propriedade intelectual e as otimizações permanecem na conta oficial da sua
-                empresa.
+                empresa ou serviço.
               </p>
             </details>
 
@@ -1722,7 +1722,7 @@ export default function LandingPage2026({
               </summary>
               <p className={`text-sm ${mutedText} mt-3 leading-relaxed`}>
                 O Pilar 04 (Blindagem Algorítmica) trava a consistência de NAP (Nome, Endereço e Telefone) com
-                sinais cruzados e metadados GPS, impedindo que sugestões maliciosas de terceiros derrubem seu pino.
+                sinais cruzados e metadados GPS, impedindo que sugestões maliciosas de terceiros derrubem seu serviço.
               </p>
             </details>
           </div>
