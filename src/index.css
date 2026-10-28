@@ -1,0 +1,184 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  body {
+    font-family: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  code, kbd, samp, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', 'Sora', sans-serif;
+  }
+}
+
+/* Custom CSS animations and smooth transitions */
+@keyframes bounceShort {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.animate-bounce-short {
+  animation: bounceShort 2s ease-in-out infinite;
+}
+
+/* ==========================================================================
+   LIGHT THEME OVERRIDES IN UTILITIES LAYER (REFINADO & SEM PERDA DE CONTRASTE)
+   ========================================================================== */
+@layer utilities {
+  /* Root Light Mode Background & Base Text */
+  html.theme-light,
+  html.theme-light body,
+  html.theme-light #root,
+  .theme-light {
+    background-color: #f8fafc !important;
+    color: #0f172a !important;
+  }
+
+  /* Structural containers in Light Mode */
+  html.theme-light section,
+  html.theme-light article,
+  html.theme-light main,
+  html.theme-light footer {
+    color: #0f172a;
+  }
+
+  /* Protect gradient clipped text from being forced to solid color */
+  html.theme-light .text-transparent,
+  html.theme-light [class*="text-transparent"] {
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important;
+  }
+
+  /* Card and Panel backgrounds in Light Mode (excluding interactive buttons) */
+  html.theme-light div:not(button):not(a):not([role="button"]):is([class*="bg-[#060911]"], [class*="bg-[#0b1220]"], [class*="bg-[#0d1322]"], [class*="bg-[#111622]"], [class*="bg-[#161d2a]"], [class*="bg-[#182030]"], [class*="bg-[#0b101c]"], [class*="bg-[#0d1424]"], [class*="bg-[#04070d]"]) {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    border-color: #e2e8f0 !important;
+  }
+
+  /* Text readability in Light Mode for neutral slate texts */
+  html.theme-light div:not(button):not(a) > .text-slate-100,
+  html.theme-light div:not(button):not(a) > .text-slate-200,
+  html.theme-light div:not(button):not(a) > .text-slate-300,
+  html.theme-light div:not(button):not(a) > .text-slate-400,
+  html.theme-light p.text-slate-300,
+  html.theme-light p.text-slate-400,
+  html.theme-light span.text-slate-300,
+  html.theme-light span.text-slate-400 {
+    color: #334155 !important;
+  }
+
+  html.theme-light h1.text-white,
+  html.theme-light h2.text-white,
+  html.theme-light h3.text-white,
+  html.theme-light h4.text-white,
+  html.theme-light strong.text-white {
+    color: #0f172a !important;
+  }
+
+  /* Buttons with bright gradients: keep their contrasting dark/light text */
+  html.theme-light button:is([class*="from-emerald-500"], [class*="bg-emerald-500"], [class*="from-teal-400"]),
+  html.theme-light a:is([class*="from-emerald-500"], [class*="bg-emerald-500"], [class*="from-teal-400"]) {
+    color: #022c22 !important;
+  }
+
+  /* Secondary dark buttons in Light Mode: clean high-contrast navy */
+  html.theme-light button:is([class*="bg-[#0d1322]"], [class*="bg-[#151e33]"], [class*="bg-[#161b22]"]),
+  html.theme-light a:is([class*="bg-[#0d1322]"], [class*="bg-[#151e33]"], [class*="bg-[#161b22]"]) {
+    background-color: #1e293b !important;
+    color: #ffffff !important;
+    border-color: #334155 !important;
+  }
+
+  /* Badges and tags in Light Mode */
+  html.theme-light .text-amber-400,
+  html.theme-light .text-amber-300 {
+    color: #b45309 !important;
+  }
+
+  html.theme-light .text-emerald-400,
+  html.theme-light .text-emerald-300 {
+    color: #047857 !important;
+  }
+
+  html.theme-light .text-blue-400,
+  html.theme-light .text-sky-400 {
+    color: #1d4ed8 !important;
+  }
+
+  /* Form inputs & textareas in Light Mode */
+  html.theme-light input,
+  html.theme-light select,
+  html.theme-light textarea {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    border-color: #cbd5e1 !important;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+  }
+
+  html.theme-light input::placeholder,
+  html.theme-light textarea::placeholder {
+    color: #64748b !important;
+  }
+
+  /* Borders & Dividers in Light Mode */
+  html.theme-light [class*="border-slate-8"],
+  html.theme-light [class*="border-slate-7"],
+  html.theme-light [class*="border-white"] {
+    border-color: #e2e8f0 !important;
+  }
+}
+
+/* Print CSS setup for A4 Executive PDF Export */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  html, body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    font-size: 11pt;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  header, nav, .print\:hidden {
+    display: none !important;
+  }
+
+  .report-page {
+    width: 210mm !important;
+    min-height: 297mm !important;
+    padding: 20mm !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    page-break-after: always !important;
+    break-after: page !important;
+    background: #ffffff !important;
+    color: #0f172a !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+
+  .report-page:last-child {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+}

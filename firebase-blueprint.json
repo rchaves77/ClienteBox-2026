@@ -1,0 +1,67 @@
+{
+  "entities": {
+    "AccessSettings": {
+      "title": "Access Settings",
+      "description": "Global access configuration and security parameters stored in Firestore",
+      "type": "object",
+      "properties": {
+        "globalPasswordHash": {
+          "type": "string",
+          "description": "Bcrypt hash of the global administrative password"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp of the last password or security settings update"
+        },
+        "updatedBy": {
+          "type": "string",
+          "description": "Email or ID of the manager who performed the last update"
+        }
+      },
+      "required": ["globalPasswordHash", "updatedAt"]
+    },
+    "GestorCredential": {
+      "title": "Gestor Credential",
+      "description": "User profile credential and password hash stored in Firestore",
+      "type": "object",
+      "properties": {
+        "nome": {
+          "type": "string",
+          "description": "Full name of the manager"
+        },
+        "email": {
+          "type": "string",
+          "description": "Email address used for authentication"
+        },
+        "senhaHash": {
+          "type": "string",
+          "description": "Bcrypt password hash for this specific user"
+        },
+        "role": {
+          "type": "string",
+          "description": "Role level (superadmin, admin, gestor)"
+        },
+        "ativo": {
+          "type": "boolean",
+          "description": "Whether account is currently active"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": ["nome", "email", "senhaHash", "role", "ativo"]
+    }
+  },
+  "firestore": {
+    "/access_settings/{settingId}": {
+      "schema": "AccessSettings",
+      "description": "Stores global administrative security settings and global password hash"
+    },
+    "/gestores_credentials/{gestorId}": {
+      "schema": "GestorCredential",
+      "description": "Stores individual manager password hashes and credentials"
+    }
+  }
+}

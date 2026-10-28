@@ -1,0 +1,8 @@
+{
+  "name": "ClienteBox - Gestão & Relatórios de SEO Local",
+  "description": "Plataforma de gestão, inteligência competitiva e gerador de relatórios executivos para Google Maps e Google Meu Negócio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

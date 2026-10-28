@@ -1,0 +1,231 @@
+{
+  "gestores": [
+    {
+      "id": 1,
+      "nome": "ClienteBox Admin",
+      "email": "clienteboxplus@gmail.com",
+      "senhaHash": "$2b$10$Xsadh6FyninxT33zcxGWBOH8XYptVArVHihc1nFReeLUvDq.Yqde.",
+      "role": "superadmin",
+      "ativo": true,
+      "criadoEm": "2026-09-28T15:03:29.096Z",
+      "ultimoAcesso": null
+    },
+    {
+      "id": 2,
+      "nome": "Rômulo Chaves",
+      "email": "romulochaves77@gmail.com",
+      "senhaHash": "$2b$10$Xsadh6FyninxT33zcxGWBOH8XYptVArVHihc1nFReeLUvDq.Yqde.",
+      "role": "superadmin",
+      "ativo": true,
+      "criadoEm": "2026-09-28T15:03:29.096Z",
+      "ultimoAcesso": null
+    }
+  ],
+  "companies": {
+    "impacto-agro-contabilidade": {
+      "id": "impacto-agro-contabilidade",
+      "nome": "Impacto Agro Contabilidade",
+      "responsavel": "Dr. Marcos Vinícius / Rômulo Silva",
+      "categoria": "Contabilidade & Consultoria Agronegócio",
+      "endereco": "Av. Amazonas, 2313 D - Nova Porto Velho, Porto Velho - RO, 76820-115",
+      "ltv": 1500,
+      "pixChave": "(68) 99206-4951",
+      "pixFavorecido": "Rômulo Chaves da Silva",
+      "pixBanco": "Sicredi",
+      "periodo": "Agosto a Setembro 2026",
+      "ciclo": "Outubro 2026",
+      "dataIntervencao": "10 de Agosto",
+      "metricasAnterior": {
+        "interacoes": 480,
+        "rotas": 210,
+        "chats": 115,
+        "ligacoes": 85
+      },
+      "metricasAtual": {
+        "interacoes": 690,
+        "rotas": 340,
+        "chats": 160,
+        "ligacoes": 122
+      },
+      "acoes": [
+        "Auditoria e ajuste de categorias secundárias no Google Meu Negócio (Contabilidade Rural, Consultoria Fiscal)",
+        "Geomapeamento e inclusão de fotos em alta resolução da sede em Porto Velho",
+        "Parametrização do link de UTM no botão de WhatsApp para rastreamento de produtores rurais",
+        "Otimização das respostas a avaliações e termos de SEO local de agronegócio"
+      ],
+      "proximosPassos": [
+        "Aumento das avaliações 5 estrelas via QR Code em atendimentos presenciais",
+        "Publicação de posts semanais sobre planejamento tributário para o agronegócio no Google Maps",
+        "Monitoramento das primeiras posições em Porto Velho e região metropolitana"
+      ],
+      "concorrentes": [
+        {
+          "nome": "Impacto Agro Contabilidade (Você)",
+          "posicao": "Top 1",
+          "categoria": "Contabilidade Agronegócio",
+          "nota": "5.0 ★ (48)",
+          "status": "Líder em Porto Velho"
+        },
+        {
+          "nome": "Rondônia Contábil",
+          "posicao": "Top 2",
+          "categoria": "Escritório de Contabilidade",
+          "nota": "4.6 ★ (32)",
+          "status": "Falta link direto para WhatsApp"
+        },
+        {
+          "nome": "AgroFisc Consultoria",
+          "posicao": "Top 3",
+          "categoria": "Consultoria Tributária",
+          "nota": "4.3 ★ (19)",
+          "status": "Poucas fotos e atualizações raras"
+        }
+      ]
+    },
+    "instituto-serclin": {
+      "id": "instituto-serclin",
+      "nome": "Instituto SerClin",
+      "responsavel": "Dra. Patrícia Serpa / Rômulo Silva",
+      "categoria": "Clínica Médica & Saúde Integrada",
+      "endereco": "Rua Sorocaba, 140 - Doca Furtado, Rio Branco - AC, 69918-130",
+      "ltv": 1800,
+      "pixChave": "(68) 99206-4951",
+      "pixFavorecido": "Rômulo Chaves da Silva",
+      "pixBanco": "Sicredi",
+      "periodo": "Agosto a Setembro 2026",
+      "ciclo": "Outubro 2026",
+      "dataIntervencao": "01 de Agosto",
+      "metricasAnterior": {
+        "interacoes": 520,
+        "rotas": 280,
+        "chats": 140,
+        "ligacoes": 110
+      },
+      "metricasAtual": {
+        "interacoes": 810,
+        "rotas": 460,
+        "chats": 215,
+        "ligacoes": 165
+      },
+      "acoes": [
+        "Otimização completa do Perfil de Empresa no Google no bairro Doca Furtado",
+        "Cadastro das especialidades médicas e botão direto para agendamento presencial/online",
+        "Inclusão de fotos de alta resolução da estrutura e equipe do Instituto SerClin",
+        "Implementação de respostas personalizadas a dúvidas frequentes no perfil do Google Maps"
+      ],
+      "proximosPassos": [
+        "Aceleração do programa de fidelização e coleta de depoimentos 5 estrelas dos pacientes",
+        "Inclusão do catálogo digital de consultas e exames na aba de Produtos",
+        "Manutenção da liderança no raio médico do bairro Doca Furtado"
+      ],
+      "concorrentes": [
+        {
+          "nome": "Instituto SerClin (Você)",
+          "posicao": "Top 1",
+          "categoria": "Clínica Médica Especializada",
+          "nota": "4.9 ★ (156)",
+          "status": "Referência no Doca Furtado"
+        },
+        {
+          "nome": "Clinica Médica Rio Branco",
+          "posicao": "Top 2",
+          "categoria": "Clínica Geral",
+          "nota": "4.5 ★ (84)",
+          "status": "Sem atualização de horários"
+        },
+        {
+          "nome": "Centro de Saúde Acre",
+          "posicao": "Top 3",
+          "categoria": "Consultórios Médicos",
+          "nota": "4.2 ★ (41)",
+          "status": "Sem fotos do espaço físico"
+        }
+      ]
+    },
+    "jc-fisioterapia": {
+      "id": "jc-fisioterapia",
+      "nome": "JC Fisioterapia - Fisioterapeuta em Rio Branco",
+      "responsavel": "Dr. Jucelino Castro",
+      "categoria": "Clínica de Fisioterapia Especializada",
+      "endereco": "Rua Quintino Bocaiuva, 1848 - Bosque, Rio Branco - AC, 69900-670",
+      "ltv": 1200,
+      "pixChave": "(68) 99206-4951",
+      "pixFavorecido": "Rômulo Chaves da Silva",
+      "pixBanco": "Sicredi",
+      "periodo": "Agosto a Setembro 2026",
+      "ciclo": "Outubro 2026",
+      "dataIntervencao": "16 de Julho",
+      "metricasAnterior": {
+        "interacoes": 312,
+        "rotas": 175,
+        "chats": 82,
+        "ligacoes": 55
+      },
+      "metricasAtual": {
+        "interacoes": 394,
+        "rotas": 245,
+        "chats": 98,
+        "ligacoes": 51
+      },
+      "acoes": [
+        "Otimização do texto de agendamento e chamadas diretas no perfil",
+        "Cadastro de 8 novas fotos em alta resolução georreferenciadas no bairro Bosque",
+        "Parametrização de link UTM rastreado para o WhatsApp oficial da recepção",
+        "Auditoria e ajuste da categoria primária para Fisioterapia Especializada"
+      ],
+      "proximosPassos": [
+        "Intensificação da campanha de avaliações 5 estrelas no pós-consulta com QR Code",
+        "Monitoramento e neutralização de concorrentes diretos no bairro Bosque",
+        "Publicação de artigos curtos semanais de novidades no Google Maps",
+        "Blindagem do endereço contra tentativas de sugestão indevida e alterações maliciosas"
+      ],
+      "concorrentes": [
+        {
+          "nome": "JC Fisioterapia (Você)",
+          "posicao": "Top 1",
+          "categoria": "Fisioterapia Especializada",
+          "nota": "5.0 ★ (120)",
+          "status": "Líder Absoluto"
+        },
+        {
+          "nome": "FisioClin Rio Branco",
+          "posicao": "Top 2",
+          "categoria": "Clínica de Fisioterapia",
+          "nota": "4.7 ★ (68)",
+          "status": "Sem link de WhatsApp direto"
+        },
+        {
+          "nome": "Centro Ortopédico Bosque",
+          "posicao": "Top 3",
+          "categoria": "Ortopedia & Reabilitação",
+          "nota": "4.5 ★ (42)",
+          "status": "Poucas fotos e atualizações antigas"
+        },
+        {
+          "nome": "ReabFisio Acre",
+          "posicao": "Top 4 (Fora)",
+          "categoria": "Fisioterapia Geral",
+          "nota": "4.2 ★ (19)",
+          "status": "Inativo há mais de 6 meses"
+        }
+      ]
+    }
+  },
+  "onboardingSubmissions": [
+    {
+      "id": "test_123",
+      "nomeEmpresa": "Dra. Cibele Cristina - Teste",
+      "responsavelNome": "Dra Cibele",
+      "responsavelTelefone": "(68) 99999-8888",
+      "responsavelEmail": "cibele@exemplo.com",
+      "niches": [
+        "Saúde & Clínicas",
+        "Estética & Beleza"
+      ],
+      "dadosCompletos": {
+        "cidade": "Rio Branco"
+      },
+      "criadoEm": "2026-09-28T15:17:46.483Z"
+    }
+  ]
+}
